@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
   <title>Frontend Mentor | [Blogr]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,85 +17,136 @@
   </style>
 </head>
 <body>
-  Product
+  <main>
+    <header>
+      
+      <nav>
+        <img src="./images/logo.svg" alt="Logo Image">
+        <img src="./images/icon-hamburger.svg" alt="Hamburger Icon">
+        
+        <div class="menu">
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+          <div class="product">
+            <a href="">Product</a>
+            <div class="content">
+              <a href="">Overview</a>
+              <a href="">Pricing</a>
+              <a href="">Marketplace</a>
+              <a href="">Features</a>
+              <a href="">Integrations</a>
+            </div>
+          </div>
 
-  Company
+          <div class="company">
+            <a href="">Company</a>
+            <div class="content">
+              <a href="">About</a>
+              <a href="">Team</a>
+              <a href="">Blog</a>
+              <a href="">Careers</a>
+            </div>
+          </div>
 
-  About
-  Team
-  Blog
-  Careers
+          <div class="connect">
+            <a href="">Connect</a>
+            <div class="content">
+              <a href="">Contact</a>
+              <a href="">Newsletter</a>
+              <a href="">LinkedIn</a>
+            </div>
+          </div>
 
-  Connect
+          <button>Login</button>
+          <button>Sign Up</button>
 
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+        </div>
+      </nav>
 
-  A modern publishing platform
-  Grow your audience and build your online brand
+      <h1>A modern publishing platform</h1>
 
-  Start for Free
-  Learn More
+      <p>Grow your audience and build your online brand</p>
 
-  Designed for the future
+      <div class="action">
+        <a class="free" href="">Start for Free</a>
+        <a class="more" href="">Learn More</a>
+      </div>
+      
+    </header>
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
+    <section class="design">
+      <h1>Designed for the future</h1>
+      <img src="./images/illustration-editor-mobile.svg" alt="">
+      <h2>Introducing an extensible editor</h2>
+      <p>
+        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+        change the looks of a blog.
+      </p>
+      <h2>Robust content management</h2>
+      <p>
+        Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+      </p>
+    </section>
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+    <section class="infraestructure">
+        <img src="./images/illustration-phones.svg" alt="Phones Image">
+        <h2>State of the Art Infrastructure</h2>
+        <p>
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>           
+    </section>
 
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+    <section class="description">
+      <img src="./images/illustration-laptop-mobile.svg" alt="Laptop Image">
+      <h2>Free, open, simple</h2>
+      <p>
+        Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      </p>
+      <h2>Powerful tooling</h2>
+      <p>
+        Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        capable of producing even the most complicated sites.
+      </p>
+    </section>
 
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+    <footer>
+      <img src="./images/logo.svg" alt="Logo Image">
+      <h1>Product</h1>
+      <ul>
+        <li>Overview</li>
+        <li>Pricing</li>
+        <li>Marketplace</li>
+        <li>Features</li>
+        <li>Integrations</li>
+      </ul>
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
+      <h1>Company</h1>
+      <ul>
+        <li>About</li>
+        <li>Team</li>
+        <li>Blog</li>
+        <li>Careers</li>
+      </ul>
 
-  Product
+      <h1>Connect</h1>
+      <ul>
+        <li>Contact</li>
+        <li>Newsletter</li>
+        <li>LinkedIn</li>
+      </ul>
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/Hualdop">HualDev</a>.
+      </div>
 
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </footer>
+    
+  </main>  
 </body>
 </html>

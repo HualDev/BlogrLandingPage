@@ -1,0 +1,122 @@
+:root{
+    --lightRedCtaText: hsl(356, 100%, 66%);
+    --veryLightRedCtaHoverBackground: hsl(355, 100%, 74%);
+    --veryDarkBlueHeadings: hsl(208, 49%, 24%);
+    --whiteText: hsl(0, 0%, 100%);
+    --grayishBlueFooterText: hsl(240, 2%, 79%);
+    --veryDarkGrayishBlueBodyCopy: hsl(207, 13%, 34%);
+    --veryDarkBlackBlueFooterBackground: hsl(240, 10%, 16%);
+
+    --veryLightRed: hsl(13, 100%, 72%);
+    --LightRed: hsl(353, 100%, 62%);
+    --veryDarkGrayBlue: hsl(237, 17%, 21%);
+    --veryDarkDesaturatedBlue: hsl(237, 23%, 32%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+main{
+    background-size: cover;
+    background-position: top;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{   
+    color: var(--whiteText);
+    background-image:url('./images/bg-pattern-intro-mobile.svg'), linear-gradient(var(--veryLightRed),var(--LightRed));
+    background-position: center;
+    border-radius: 0 0 0 120px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+}
+
+header h1{    
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+    padding: 40px 20px 0;
+}
+
+header p{
+    text-align: center;
+    padding: 20px;
+    line-height: 1.3;
+    margin: 0;
+    font-size: 18px;
+    
+}
+
+.action{
+    padding: 40px 20px 150px;
+    text-align: center;
+    
+}
+
+.action a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.free{
+    background-color: var(--whiteText);
+    color: var(--lightRedCtaText);
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.more{
+    color: var(--whiteText);
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: solid 1px var(--whiteText);
+    margin: 0 20px 0  ;
+}
+
+.menu{
+    display: none;
+}
+
+.design{
+    width: 100%;
+    margin: auto;
+}
+
+.design h1{
+    text-align: center;
+    padding: 100px 20px 40px;
+    color: var(--veryDarkBlueHeadings);
+    font-size: 26px;
+}
+
+.infraestructure{
+    background-image: url('./images/bg-pattern-circles.svg'), linear-gradient(var(--veryDarkGrayBlue),var(--veryDarkDesaturatedBlue));
+    background-size: cover;
+    
+}
+
+.infraestructure img{
+    width: 100%;
+    height: 100%;
+    margin: -90px auto;
+}
+
+
+
+
+
+footer{
+    background-color: var(--veryDarkBlackBlueFooterBackground);
+}
+
