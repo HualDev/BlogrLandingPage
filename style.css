@@ -200,7 +200,7 @@ footer li{
     line-height: 2;
 }
 
-@media(min-width:650px){
+@media(min-width:800px){
     header{
         background-image: url('./images/bg-pattern-intro-desktop.svg'), linear-gradient(var(--veryLightRed),var(--LightRed));
     }
@@ -276,6 +276,7 @@ footer li{
     header p{
         font-size: 12px;
         padding: 10px 20px;
+        margin: 0 0 100px 0;
     }
 
     .action{
@@ -294,33 +295,77 @@ footer li{
         padding: 10px 15px;
     }
 
+    .design{
+        background-image: url(./images/illustration-editor-desktop.svg);
+        background-size: 85vh;
+        background-repeat: no-repeat;
+        background-position-x: 120%;
+        background-position-y: 0%;
+        padding: 0 0 120px 0;        
+    }
+
     .design h1{
-        padding: 70px 20px 40px;
+        padding: 70px 20px 66px;
     }
 
     .design img{
-        display: none;
-    }
-
-    .design{
-        background-image: url('./images/illustration-editor-desktop.svg');
-        background-position: right center;
-        background-repeat: no-repeat;
-        background-size: cover;
+       display: none;
     }
 
     .design h2{
-        width: 30%;
-        align-items: left;
+        width: 40%;
+        padding: 0 0 0 100px;
         text-align: left;
-        padding: 50px;
+        font-size: 18px;
+        opacity: 0.8;
+        
     }
 
     .design p{
-        padding: 50px;
-        width: 30%;
-        align-items: left;
+        width: 40%;
+        margin: 0;
+        padding: 0 0 10px 100px;
         text-align: left;
-        margin: 0 0 0 50px;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 1.8;
+        opacity: 0.6;
     }
+
+    .infraestructure{
+        display: flex;
+        margin: 0 auto;
+        height: 390px;
+    }
+
+    .infraestructure img{
+        margin: -45px 0 0 130px;
+        width: 45%;
+        height: 138%;
+    }
+
+    .tittle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 45%;        
+    }
+
+   .infraestructure h2{
+        padding: 0 0 0 20px;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: left; 
+        margin: 0; 
+        width: 75%;     
+    }
+
+    .infraestructure p{
+        padding: 10px 0 0 20px ;
+        text-align: left;
+        font-size: 12px;
+        width: 75%;
+        margin: 0;
+    }
+    
 }
