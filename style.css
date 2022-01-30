@@ -74,12 +74,22 @@ header p{
     border-radius: 30px;
 }
 
+.free:hover{
+    background-color: var(--veryLightRedCtaHoverBackground);
+    color: var(--whiteText);
+}
+
 .more{
     color: var(--whiteText);
     padding: 15px 30px;
     border-radius: 30px;
     border: solid 1px var(--whiteText);
     margin: 0 20px 0  ;
+}
+
+.more:hover{
+    background-color: var(--whiteText);
+    color: var(--veryLightRedCtaHoverBackground);
 }
 
 .menuLeft{
@@ -198,6 +208,11 @@ footer li{
     list-style-type: none;
     color: var(--grayishBlueFooterText);
     line-height: 2;
+    cursor: pointer;
+}
+
+footer li:hover{
+    text-decoration: underline;
 }
 
 @media(min-width:800px){
@@ -206,7 +221,7 @@ footer li{
     }
 
     nav{
-        padding: 30px;
+        padding: 50px 150px;
     }
 
     .hamburger{
@@ -220,48 +235,66 @@ footer li{
     }
 
     .menuLeft{
-        display: inline;
+        display: flex;
         padding: 20px;
     }
-
        
-    .product{
-        display: inline; 
-             
+    .subMenu{
+        display: flex;
+        flex-direction: column;              
     }
 
-    .company {
-        display: inline;
-        
-    }
-
-    .connect{
-        display: inline;
-        
-    }
-
-    .menuLeft a{
+    .group{
         padding: 0 0 0 10px;
-        text-decoration: none;
-        text-decoration: none;
         color: var(--whiteText);
         opacity: 0.4;
+        cursor: pointer;
+    }
+
+    .group:hover{
+        text-decoration: underline;
     }
 
     .buttons{
-        display: inline;
-        
-    }
-
+        display: inline;        
+    } 
+    
     .content{
         display: none;
+        position: absolute;
+        top: 100px;
+        padding: 20px 30px 20px 10px;
+        line-height: 1.8;
+        flex-direction: column;
+        float: right;
+        background-color: white;
+        border-radius: 5px;            
     }
 
+    .content a{
+        color: black;
+        text-decoration: none; 
+        font-weight: 300;
+    }
+
+    .rotate{
+        transform: rotate(180deg);
+    }
+
+    .content a:hover{
+        font-weight: 700;
+    }
+
+    .contentVisible{
+        display: flex;
+    }   
+    
     .login{
         background-color: transparent;
         border: none;
         color: var(--whiteText);
         opacity: 0.4;
+        margin: 0 10px 0 0;        
     }
 
     .sign{
@@ -271,6 +304,13 @@ footer li{
         padding: 8px 25px;
         font-size: 12px;
         font-weight: 800;
+        cursor: pointer;
+    }
+
+    .sign:hover{
+        background-color: var(--veryLightRedCtaHoverBackground);
+        color: var(--whiteText);
+        cursor: pointer;        
     }
 
     header p{
@@ -287,7 +327,7 @@ footer li{
         font-size: 12px;
         font-weight: 800;
         padding: 10px;
-    }
+    }    
 
     .more{
         font-size: 12px;
