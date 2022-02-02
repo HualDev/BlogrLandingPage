@@ -21,12 +21,19 @@
     <header>
       
       <nav>
-        <div class="left">
+        <div>
           <img src="./images/logo.svg" alt="Logo Image">
+        </div>
+        
+        <div class="left" id="left">
+         
           <div class="menuLeft">
             <div class="subMenu " id="product">
               <div class="group">Product 
-                <img class="rotate" src="./images/icon-arrow-light.svg" alt="" id="imag">
+                  <img class="light" src="./images/icon-arrow-light.svg" alt="" id="imag">
+                  <img class="dark" src="./images/icon-arrow-dark.svg" alt="" id="imag3">
+                
+                
               </div>
               <div class="content" id="content1">
                 <a href="">Overview</a>
@@ -39,7 +46,8 @@
 
             <div class="subMenu" id="company">
               <div class="group">Company
-                <img class="rotate" src="./images/icon-arrow-light.svg" alt="" id="imag1">
+                <img class="light" src="./images/icon-arrow-light.svg" alt="" id="imag1">
+                <img class="dark" src="./images/icon-arrow-dark.svg" alt="" id="imag4">
               </div>
               <div class="content" id="content2">
                 <a href="">About</a>
@@ -51,7 +59,8 @@
 
             <div class="subMenu" id="connect">
               <div class="group">Connect
-                <img class="rotate" src="./images/icon-arrow-light.svg" alt="" id="imag2">
+                <img class="light" src="./images/icon-arrow-light.svg" alt="" id="imag2">
+                <img class="dark" src="./images/icon-arrow-dark.svg" alt="" id="imag5">
               </div>
               <div class="content" id="content3">
                 <a href="">Contact</a>
@@ -61,15 +70,20 @@
             </div>            
              
           </div>
-        </div>
 
-        <div class="right">
-          <img class="hamburger" src="./images/icon-hamburger.svg" alt="Hamburger Icon">
+          <hr class="line"/>
+
           <div class="buttons">
             <button class="login">Login</button>
             <button class="sign">Sign Up</button>
           </div> 
-        </div> 
+
+        </div>
+
+        <div class="menuRight" id="menuRight">
+          <img class="hamburger" src="./images/icon-hamburger.svg" alt="Hamburger Icon" id="hamburger">
+          <img class="close" src="./images/icon-close.svg" alt="Close hamburger" id="close">
+        </div>
         
       </nav>
 
@@ -171,8 +185,7 @@
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://www.frontendmentor.io/profile/Hualdop">HualDev</a>.
-
-        <img src="./images/icon-arrow-dark.svg" alt="">
+        
       </div>
 
     </footer>
